@@ -1,6 +1,124 @@
-.box{
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    background-color: red;
+/* Reset margin and padding for all elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+/* Ensure html and body fill the viewport and prevent overflow */
+html, body {
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling and overflow */
+    margin: 0; /* Ensure no extra space */
+}
+
+/* Body styling */
+body {
+    height: 100vh;
+    position: relative;
+}
+
+/* Style for the orange stripe */
+.orange_stripe {
+    overflow: hidden;
+    width: 100%;
+    height: 100px;
+    background-color: orange;
+    position: absolute; /* Make sure it is positioned relative to body */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Ensure it's above other content if needed */
+}
+
+/* Style for the title */
+.title {
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50px; /* Adjust based on stripe height */
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Ensure it is above other content */
+}
+
+/* Grid container styling */
+.container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* Use fractional units for responsiveness */
+    grid-template-rows: repeat(10, 1fr);
+    height: calc(100vh - 100px); /* Full viewport height minus the stripe height */
+    width: 100vw;
+    position: absolute; /* Position below the orange stripe */
+    top: 100px;
+}
+
+/* Style for the image */
+.shy_rat {
+ /* Combined border properties */
+    grid-column: 2;
+    grid-row: 3;
+    height: 190px;
+    width: 315px;
+    object-fit: cover; /* Ensure the image covers its area properly */
+    transition: transform 0.5s ease; /* Add missing semicolon */
+    border: 5px solid black;
+
+}
+
+
+
+.shy_rat:hover {
+    transform: scale(1.1);
+}
+
+/* Style for the list */
+.shy_rat-list {
+    font-size: 30px;
+    margin-left: 23px;
+    grid-column: 2;
+    grid-row: 4;
+    padding: 10px; /* Padding for spacing */
+}
+
+/* Style for unsocial title */
+.unsocial {
+    font-size: 30px;
+    display: flex;
+    grid-column: 2;
+    grid-row: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.border1 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    border: 5px solid black;
+}
+
+.border2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: 5px solid black;
+}
+
+.price1 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 50px;
+    grid-column: 2/3;
+    grid-row: 5/6;
+    height: 100px;
+    width: 143px;
+    border: 5px solid black;
+}
+
+ .button1 {
+    font-size: 20px;
+    height: 100px;
+    width: 172px;
+    left: 321px;
+    position: absolute;
+    top: 536px;
+ }
