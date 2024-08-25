@@ -55,9 +55,9 @@ body {
 /* Style for the image */
 .shy_rat {
  /* Combined border properties */
-    grid-column: 2;
-    grid-row: 3;
-    height: 190px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    height: 255px;
     width: 315px;
     object-fit: cover; /* Ensure the image covers its area properly */
     transition: transform 0.5s ease; /* Add missing semicolon */
@@ -123,9 +123,9 @@ body {
 
 
  .gangster-rat {
-    height: 190px;
+    height: 255px;
     width: 315px;
-    grid-column: 4/6;
+    grid-column: 4/5;
     grid-row: 3/4;
     border: 5px solid red;
     transition: transform 0.5s ease;
@@ -138,7 +138,7 @@ body {
     border: 5px solid red;
  }
 
- .sigma-rat {
+ .sigma-rat { 
     font-size: 35px;
     display: flex;
     grid-column: 4/5;
@@ -190,9 +190,33 @@ body {
  }
 
 .Liam {
-    height: 190px;
+    height: 255px;
     width: 315px;
     grid-column: 6/7;
     grid-row: 3/4;
     object-fit: cover;
+    border: 5px solid blue;
+
+}
+
+.border6 {
+    grid-column: 6/7;
+    grid-row: 2/3;
+    border: 5px solid blue;
+}
+
+.Liam-title {
+    font-size: 35px;
+    display: flex;
+    grid-column: 6/7;
+    grid-row: 2/3;
+    justify-content: center;
+    align-items: center;
+}
+
+.liam-list {
+    font-size: ;
+    grid-row: 4/5;
+    grid-column: 6/7;
+    border: 5px solid blue;
 }
