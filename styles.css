@@ -82,10 +82,11 @@ body {
 
 /* Style for unsocial title */
 .unsocial {
-    font-size: 30px;
+    margin-right: 3px;
+    font-size: 36px;
     display: flex;
-    grid-column: 2;
-    grid-row: 2;
+    grid-column: 2/3;
+    grid-row: 2/3;
     justify-content: center;
     align-items: center;
 }
@@ -94,10 +95,11 @@ body {
 .border1{
     grid-column: 2/3;
     grid-row: 4/5;
-    border: 5px solid black;
+    border: 10px solid black;
 }
 
 .border2 {
+    height: 80px;
     grid-column: 2/3;
     grid-row: 2/3;
     border: 5px solid black;
@@ -139,7 +141,7 @@ body {
  }
 
  .sigma-rat { 
-    font-size: 35px;
+    font-size: 45px;
     display: flex;
     grid-column: 4/5;
     grid-row: 2/3;
@@ -156,15 +158,15 @@ body {
  .border4 {
     grid-column: 4/5;
     grid-row: 4/5;
-    border: 5px solid red;
+    border: 10px solid red;
  }
 
  .sigma-rat-list {
-    font-size: 20px;
+    font-size: 19px;
     grid-column: 4/5;
     grid-row: 4/5;
-    margin-top: 15px;
-    margin-left: 30px;
+    margin-top: 16px;
+    margin-left: 34px;
  }
 
  .border5 {
@@ -196,6 +198,7 @@ body {
     grid-row: 3/4;
     object-fit: cover;
     border: 5px solid blue;
+    transition: transform 0.5s ease;
 
 }
 
@@ -206,7 +209,7 @@ body {
 }
 
 .Liam-title {
-    font-size: 35px;
+    font-size: 50px;
     display: flex;
     grid-column: 6/7;
     grid-row: 2/3;
@@ -215,8 +218,35 @@ body {
 }
 
 .liam-list {
-    font-size: ;
+    margin-top: 15px;
+    margin-left: 35px;
+    font-size: 20px;
     grid-row: 4/5;
     grid-column: 6/7;
+}
+
+.border7 {
+    grid-column: 6/7;
+    grid-row: 4/5;
+    border: 10px solid blue;
+}
+
+.Liam:hover {
+    transform: scale(1.1);
+}
+
+.price3 {
+    display: flex;
+    grid-column: 6/7;
+    grid-row: 5/6;
+    justify-content: center;
+    align-items: center;
     border: 5px solid blue;
+    font-size: 80px;
+}
+
+.button3 {
+    grid-column: 6/7;
+    grid-row: 6/7;
+    font-size: 25px;
 }
