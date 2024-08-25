@@ -27,6 +27,7 @@ body {
     position: absolute; /* Make sure it is positioned relative to body */
     top: 0;
     left: 0;
+    border-bottom: 5px solid black;
     z-index: 1; /* Ensure it's above other content if needed */
 }
 
@@ -73,7 +74,7 @@ body {
 /* Style for the list */
 .shy_rat-list {
     font-size: 30px;
-    margin-left: 23px;
+    margin-left: 30px;
     grid-column: 2;
     grid-row: 4;
     padding: 10px; /* Padding for spacing */
@@ -90,7 +91,7 @@ body {
 }
 
 
-.border1 {
+.border1{
     grid-column: 2/3;
     grid-row: 4/5;
     border: 5px solid black;
@@ -104,21 +105,64 @@ body {
 
 .price1 {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 80px;
     grid-column: 2/3;
     grid-row: 5/6;
     height: 100px;
-    width: 143px;
     border: 5px solid black;
 }
 
- .button1 {
+/* Button styling */
+.button1 {
+    grid-column: 2 / 3; /* Position in grid column */
+    grid-row: 6 / 7; /* Position in grid row */
+    font-size: 25px;
+}
+
+
+ .gangster-rat {
+    height: 190px;
+    width: 315px;
+    grid-column: 4/6;
+    grid-row: 3/4;
+    border: 5px solid red;
+    transition: transform 0.5s ease;
+ }
+
+ .border3 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    width: 315px;
+    border: 5px solid red;
+ }
+
+ .sigma-rat {
+    font-size: 35px;
+    display: flex;
+    grid-column: 4/5;
+    grid-row: 2/3;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ .gangster-rat:hover {
+    transform: scale(1.1);
+ }
+
+
+ .border4 {
+    grid-column: 4/5;
+    grid-row: 4/5;
+    border: 5px solid red;
+ }
+
+ .sigma-rat-list {
     font-size: 20px;
-    height: 100px;
-    width: 172px;
-    left: 321px;
-    position: absolute;
-    top: 536px;
+    grid-column: 4/5;
+    grid-row: 4/5;
+    margin-top: 15px;
+    margin-left: 30px;
  }
