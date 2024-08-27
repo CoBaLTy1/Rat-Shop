@@ -15,7 +15,6 @@ html, body {
 /* Body styling */
 body {
     height: 100vh;
-    position: relative;
 }
 
 /* Style for the orange stripe */
@@ -28,7 +27,7 @@ body {
     top: 0;
     left: 0;
     border-bottom: 5px solid black;
-    z-index: 1; /* Ensure it's above other content if needed */
+ /* Ensure it's above other content if needed */
 }
 
 /* Style for the title */
@@ -257,4 +256,11 @@ body {
     grid-row: 3/4;
     width: 300px;
     height: 120px;
+    transition: transform 0.5s ease;
 }
+
+.button-money:hover {
+    background-color: greenyellow;
+    transform: scale(1.05);
+}
+
