@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rat Shop</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js" defer></script>
 
 </head>
 
@@ -73,7 +75,9 @@
 
         <button class="button3">Put in shopping cart!</button>
 
-        <button class="button-money">Click For Cash</button>
+        <button class="button-money" id="button-money" onclick="addvalue('increase');">Click For Cash</button>
+
+        <p class="money-display">Money:0</p>
    </div>
 
     <div class="orange_stripe"></div>
