@@ -257,6 +257,7 @@ body {
     width: 300px;
     height: 120px;
     transition: transform 0.5s ease;
+    background-color: orange;
 }
 
 .button-money:hover {
@@ -265,7 +266,8 @@ body {
 }
 
 .money-display {
-    font-size: 45px;
+    font-size: 30px;
+    width: 350px;
     display: flex;
     grid-column: 8/9;
     grid-row: 4/5;
