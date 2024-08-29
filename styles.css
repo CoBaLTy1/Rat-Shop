@@ -285,3 +285,11 @@ body {
     color: red;
     margin-top: 15px;
 }
+
+#money-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: center;
+}
+
