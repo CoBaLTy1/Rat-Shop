@@ -275,3 +275,13 @@ body {
     align-items: bottom;
 
 }
+
+.notenoughmoney {
+    font-size: 30px;
+    display: flex;
+    grid-column: 8/9;
+    grid-row: 4/5;
+    align-items: center;
+    color: red;
+    margin-top: 15px;
+}
